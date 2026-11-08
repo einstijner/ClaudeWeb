@@ -32,6 +32,9 @@ After changing the skill, run `./scripts/build-zip.sh` and upload the new zip.
 | --- | --- |
 | `SKILL.md` | The workflow Claude follows and which file wins in a conflict |
 | `references/anti-slop.md` | Hard rules and what never ships |
+| `references/seo-performance.md` | Hard speed budgets (Core Web Vitals, Lighthouse), technical and local SEO, structured data |
+| `references/security.md` | Secrets, security headers, forms, payments, dependencies, account ownership |
+| `references/legal.md` | Photo and font rights, copyright, truthful claims and reviews, prices, disclaimers, privacy and cookies, accessibility |
 | `references/process.md` | Briefing, sign-off, verifying with evidence, taking feedback |
 | `references/craft.md` | Type, colour, spacing, shape, motion, states, forms, UX laws, accessibility |
 | `references/dna/` | Design DNA: schema, generation guide, how Leeward applies it, saved DNA files |

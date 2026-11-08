@@ -15,6 +15,9 @@ the working reference implementation.
   Deep links preselect the trip (`/?trip=...#book`).
 - **Payments**: Stripe Checkout when the client takes deposits online; otherwise "quoted on request".
 - **SEO**: per-page metadata, canonical URLs, Open Graph images, LocalBusiness JSON-LD, sitemap, robots.
+- **Security headers** in `next.config.ts` `headers()` (see `security.md`).
+- **Legal pages:** `/privacy`, `/terms` (or booking terms), `/accessibility`, plus any client disclaimers.
+- **Credits/licences:** every asset logged in `lib/images.ts` (or `CREDITS.md`) with source and licence.
 - Node 22+, `npm run build` and `npm run lint` must pass.
 
 ## Structure

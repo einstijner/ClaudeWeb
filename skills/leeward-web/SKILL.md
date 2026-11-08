@@ -1,6 +1,6 @@
 ---
 name: leeward-web
-description: Leeward's complete playbook for designing and building client websites (hospitality, charters, tours, restaurants, beach bars, local Caribbean businesses). Use for ANY website, landing page, homepage, section, redesign, front-end build, design review, or "make it look like this site" request, even a single hero or footer. Covers the brief, choosing a feel, extracting design DNA from reference sites, craft rules, the stack, the hard rules and anti-slop list, verification and the ship checklist.
+description: Leeward's complete playbook for designing, building and launching client websites (hospitality, charters, tours, restaurants, beach bars, local Caribbean businesses). Use for ANY website, landing page, homepage, section, redesign, front-end build, design review, or "make it look like this site" request, even a single hero or footer. Covers the brief, choosing a feel, extracting design DNA from reference sites, craft rules, the stack, hard SEO/speed, security and legal rules (photo rights, copyright, claims, privacy, disclaimers), the anti-slop list, verification and the ship checklist.
 ---
 
 # Leeward web playbook
@@ -16,7 +16,9 @@ When instructions conflict, the higher one wins:
 
 1. The owner's words in this conversation.
 2. `references/feedback-log.md` (past corrections).
-3. The hard rules in `references/anti-slop.md`.
+3. The hard rules: legal, security and SEO/speed gates (`legal.md`, `security.md`,
+   `seo-performance.md`) first, then the design hard rules in `anti-slop.md`. A gate is never traded
+   for looks: if a cinematic video breaks the speed budget, the video changes, not the budget.
 4. The rest of this skill.
 5. Reference sites and extracted design DNA. References teach *why* something works; they never
    override a hard rule (Apple's pill buttons are not copied, for example).
@@ -31,6 +33,9 @@ When instructions conflict, the higher one wins:
 | `references/taste.md` | Every design decision. Constants, the feels, reference-site notes. |
 | `references/craft.md` | While designing and building: type, colour, spacing, motion, states, forms, UX laws, accessibility. |
 | `references/stack.md` | Before writing code. |
+| `references/seo-performance.md` | Before writing code and before launch. Speed budgets, technical and local SEO, structured data. |
+| `references/security.md` | Before writing code and before launch. Secrets, headers, forms, payments, accounts. |
+| `references/legal.md` | Before using any photo, font, claim or review, and before launch. Rights, claims, disclaimers, privacy, cookies. |
 | `references/ship-checklist.md` | Before calling anything finished. |
 | `references/dna/` | When matching reference sites or screenshots, or when a feel has a DNA file. |
 
@@ -41,7 +46,9 @@ a new site does every step.
 
 1. **Brief.** Understand the business before designing: who books, what they book, how they pay or
    enquire, what makes this place different. Read what the owner gave you first; ask only what's still
-   missing, in one short batch. Never invent prices, reviews, awards, stats or names.
+   missing, in one short batch. Never invent prices, reviews, awards, stats or names. Ask where the
+   photos come from and whether the client has terms, policies and a registration number
+   (`legal.md`).
    (`process.md` → Brief.)
 2. **Direction, then sign-off.** Pick the feel (`taste.md`), name the references or DNA it draws on, and
    propose the direction in a few lines: feel, fonts, palette (one accent), hero idea, page list,
@@ -52,15 +59,18 @@ a new site does every step.
 4. **Content and tokens first.** Real facts go in typed data files; colour, type, spacing, radius,
    shadow and motion go in CSS custom properties, from the DNA or the feel. (`stack.md`, `craft.md`.)
 5. **Build.** Photography leads, the booking path is the product, and every state exists (loading,
-   empty, error, success). Follow `craft.md`.
+   empty, error, success). Follow `craft.md`. Build in the speed budget, security headers, SEO
+   metadata and legal pages from the start, not at the end. Log every asset's licence as you add it.
 6. **Verify with evidence.** Run the site, screenshot it at 390, 768 and 1440px, and look at the
-   screenshots. Run `npm run build` and `npm run lint`. With a DNA file, score the screenshots'
+   screenshots. Run `npm run build` and `npm run lint`, Lighthouse in mobile mode on the production
+   build, and `npm audit`. With a DNA file, score the screenshots'
    colours with `scripts/verify.mjs`. Claim nothing you haven't seen work in this session.
    (`process.md` → Verify.)
 7. **Self-critique, then fix.** Review your screenshots against `anti-slop.md` and the checklist the way
    a harsh senior designer would. Fix, re-screenshot, and only then report.
-8. **Report plainly.** What's done, what's a placeholder, what the client still has to supply, with
-   the screenshots.
+8. **Report plainly.** What's done, what's a placeholder, what the client (or their lawyer) still has
+   to supply, the Lighthouse scores, and the screenshots. Any failed **GATE** in the checklist is
+   reported as a blocker, not buried.
 9. **Learn.** Every correction from the owner becomes a one-line rule in `feedback-log.md` (and the
    relevant file gets updated) so it never needs saying twice.
 
