@@ -1,0 +1,11 @@
+{
+  "name": "leeward",
+  "owner": { "name": "Leeward Digital" },
+  "plugins": [
+    {
+      "name": "leeward-web",
+      "source": "./",
+      "description": "Leeward's website build playbook: stack, design feels, hard rules, anti-slop list and ship checklist."
+    }
+  ]
+}
