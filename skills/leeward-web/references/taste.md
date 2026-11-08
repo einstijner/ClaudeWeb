@@ -32,6 +32,14 @@ Pick one at the start from the brief and the client's brand, and say which you p
 Reel Charters is **premium leaning in-depth**: Fraunces + Manrope, navy/ocean palette, photo-led hero
 with no buttons, detail pages per boat and island, booking prefilled from every card.
 
+### Cinematic (proposed, waiting on the owner's examples)
+
+The owner likes the cinematic sites shown by @webloved on TikTok. This feel is for premium clients who
+want a site that feels like a film: full-bleed video or very large photography, slow scroll-driven
+reveals, big type over moving imagery, dark palettes. It's the one feel where `visual_effects` in the DNA
+may be strong, but only with a poster image, a pause control, a static reduced-motion version and good
+mobile performance. Fill this in from the owner's chosen examples (DNA per site in `dna/`).
+
 ## Reference sites the owner likes
 
 Studied 2026-11-07 (screenshots at 1440px and 390px, styles measured in the browser).

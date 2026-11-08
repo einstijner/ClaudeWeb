@@ -1,8 +1,14 @@
 # ClaudeWeb
 
-Leeward's website build playbook as a Claude skill. Once installed, Claude follows it whenever it builds
-or reviews a website: the default stack, the four feels (premium, playful, simple, in-depth), the
-hard rules, the anti-slop list, the reference sites and the ship checklist.
+Leeward's website build playbook as one Claude skill. Once installed, Claude follows it whenever it
+builds or reviews a website: brief → direction sign-off → design DNA from reference sites → build →
+verify with screenshots → self-critique → learn from feedback.
+
+It combines Leeward's own rules and taste with the best parts of three open-source projects:
+[superpowers](https://github.com/obra/superpowers) (the process), [design-dna](https://github.com/zanwei/design-dna)
+(extracting a site's look into a measured JSON spec, with colour-checking scripts) and
+[OpenDesign](https://github.com/nexu-io/open-design) (craft rules for type, colour, motion, states, forms and UX).
+Leeward's hard rules override all of them. See `skills/leeward-web/NOTICE.md`.
 
 The skill itself is in [`skills/leeward-web/`](skills/leeward-web/SKILL.md).
 
@@ -24,8 +30,12 @@ After changing the skill, run `./scripts/build-zip.sh` and upload the new zip.
 
 | File | What it holds |
 | --- | --- |
-| `SKILL.md` | The build workflow Claude follows |
+| `SKILL.md` | The workflow Claude follows and which file wins in a conflict |
 | `references/anti-slop.md` | Hard rules and what never ships |
+| `references/process.md` | Briefing, sign-off, verifying with evidence, taking feedback |
+| `references/craft.md` | Type, colour, spacing, shape, motion, states, forms, UX laws, accessibility |
+| `references/dna/` | Design DNA: schema, generation guide, how Leeward applies it, saved DNA files |
+| `scripts/` | Measure colours from a screenshot and score a build against a DNA file (Node, needs `sharp`) |
 | `references/taste.md` | The constants, the four feels, and notes on each reference site |
 | `references/stack.md` | Default stack and project structure |
 | `references/ship-checklist.md` | Checks before anything is called finished |

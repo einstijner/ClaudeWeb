@@ -1,47 +1,81 @@
 ---
 name: leeward-web
-description: Leeward's playbook for building client websites (hospitality, charters, restaurants, beach bars, local Caribbean businesses). Use for ANY website, landing page, homepage, section, redesign or front-end build or review, even a single hero or footer. Sets the stack, design standards, banned "AI slop" patterns and the ship checklist.
+description: Leeward's complete playbook for designing and building client websites (hospitality, charters, tours, restaurants, beach bars, local Caribbean businesses). Use for ANY website, landing page, homepage, section, redesign, front-end build, design review, or "make it look like this site" request, even a single hero or footer. Covers the brief, choosing a feel, extracting design DNA from reference sites, craft rules, the stack, the hard rules and anti-slop list, verification and the ship checklist.
 ---
 
-# Leeward web build playbook
+# Leeward web playbook
 
-You are building for Leeward, a small studio that builds websites for hospitality and local businesses
-in St. Maarten and the Caribbean. The bar is a site the client can show off: it looks
-made by a person with taste for this specific business. If a section could be pasted onto any other
-company's site unchanged, it is not done.
+You are building for Leeward, a studio that makes websites for hospitality and local businesses in
+St. Maarten and the Caribbean. The bar: a site the client is proud to show, that looks made by a person
+with taste for *this* business. If a section could be pasted onto a competitor's site unchanged, it
+isn't done.
 
-Read these before writing code:
+## Precedence
 
-1. `references/anti-slop.md`: what never ships. Read every time.
-2. `references/stack.md`: the default stack and project structure.
-3. `references/taste.md`: the visual standards and the reference sites, with reasons.
-4. `references/ship-checklist.md`: run it before calling anything finished.
-5. `references/feedback-log.md`: past corrections from the owner. These override everything else here.
+When instructions conflict, the higher one wins:
+
+1. The owner's words in this conversation.
+2. `references/feedback-log.md` (past corrections).
+3. The hard rules in `references/anti-slop.md`.
+4. The rest of this skill.
+5. Reference sites and extracted design DNA. References teach *why* something works; they never
+   override a hard rule (Apple's pill buttons are not copied, for example).
+
+## Files
+
+| Read | When |
+| --- | --- |
+| `references/anti-slop.md` | Every time. Hard rules and what never ships. |
+| `references/process.md` | Every time. How to brief, get sign-off, verify and take feedback. |
+| `references/feedback-log.md` | Every time. The owner's corrections. |
+| `references/taste.md` | Every design decision. Constants, the feels, reference-site notes. |
+| `references/craft.md` | While designing and building: type, colour, spacing, motion, states, forms, UX laws, accessibility. |
+| `references/stack.md` | Before writing code. |
+| `references/ship-checklist.md` | Before calling anything finished. |
+| `references/dna/` | When matching reference sites or screenshots, or when a feel has a DNA file. |
 
 ## Workflow
 
-1. **Understand the business first.** Who books, what they book, how they pay or enquire, what makes
-   this place different from the one next door. If the brief doesn't say, ask; don't invent.
-   Never make up prices, reviews, awards, guest counts, years in business or team names.
-2. **Pick the feel.** Premium, playful, simple or in-depth (see `references/taste.md`). State which
-   one and why in your first reply. The constants and hard rules apply whatever the feel.
-3. **Content before layout.** Put the real facts (times, capacities, locations, contact, menu,
-   inclusions) in typed data files in `lib/`, then render them. Copy is specific and short:
-   "Anguilla and St. Barts are full-day only, 10am–5pm", never "Unforgettable experiences await".
-4. **Tokens before components.** Set colour, type, spacing, radius and shadow as CSS custom properties
-   from the brand (logo, photos, place) and the chosen feel, before building any section.
-   Two typefaces at most, one accent colour.
-5. **Photography leads.** Real client photos are the design. Crop deliberately (`object-position`
-   per photo), size them correctly (`sizes`), write real alt text. Use stock only where the client
-   has none, and credit it.
-6. **The booking path is the product.** The main action (book, reserve, enquire, WhatsApp) is reachable
-   from every screen on mobile, prefilled where possible, and has a fallback when the form fails.
-7. **Build, then look at it.** Run the site and screenshot it at 390px and 1440px wide (Playwright is
-   available). Fix what looks off before reporting. Don't describe a page you haven't looked at.
-8. **Run the ship checklist.** Then report plainly: what's done, what's placeholder, what the client
-   still has to supply.
+Scale it to the job: a one-line fix ("make the button navy") goes straight to building and verifying;
+a new site does every step.
 
-## When the owner corrects something
+1. **Brief.** Understand the business before designing: who books, what they book, how they pay or
+   enquire, what makes this place different. Read what the owner gave you first; ask only what's still
+   missing, in one short batch. Never invent prices, reviews, awards, stats or names.
+   (`process.md` → Brief.)
+2. **Direction, then sign-off.** Pick the feel (`taste.md`), name the references or DNA it draws on, and
+   propose the direction in a few lines: feel, fonts, palette (one accent), hero idea, page list,
+   booking path. For a new site, wait for the owner's yes. (`process.md` → Direction.)
+3. **Design DNA (when matching references).** Screenshot each reference at 1440px and 390px, measure
+   its colours with the scripts, and write a DNA JSON following `references/dna/schema.md`, then apply
+   the hard rules on top (`references/dna/README.md`). Save it in the project as `design-dna.json`.
+4. **Content and tokens first.** Real facts go in typed data files; colour, type, spacing, radius,
+   shadow and motion go in CSS custom properties, from the DNA or the feel. (`stack.md`, `craft.md`.)
+5. **Build.** Photography leads, the booking path is the product, and every state exists (loading,
+   empty, error, success). Follow `craft.md`.
+6. **Verify with evidence.** Run the site, screenshot it at 390, 768 and 1440px, and look at the
+   screenshots. Run `npm run build` and `npm run lint`. With a DNA file, score the screenshots'
+   colours with `scripts/verify.mjs`. Claim nothing you haven't seen work in this session.
+   (`process.md` → Verify.)
+7. **Self-critique, then fix.** Review your screenshots against `anti-slop.md` and the checklist the way
+   a harsh senior designer would. Fix, re-screenshot, and only then report.
+8. **Report plainly.** What's done, what's a placeholder, what the client still has to supply, with
+   the screenshots.
+9. **Learn.** Every correction from the owner becomes a one-line rule in `feedback-log.md` (and the
+   relevant file gets updated) so it never needs saying twice.
 
-Add the correction to `references/feedback-log.md` as a one-line rule with the reason, so it never
-needs saying twice. If a rule elsewhere in this skill conflicts with it, update that rule too.
+## Measuring colours
+
+The scripts in `scripts/` measure exact colours from screenshots instead of guessing by eye.
+Set `SKILL_ROOT` to the directory containing this file and use absolute paths:
+
+```bash
+npm install --prefix "$SKILL_ROOT/scripts" --silent
+node "$SKILL_ROOT/scripts/measure-colors.mjs" /abs/path/reference.png > /abs/path/reference-colors.json
+node "$SKILL_ROOT/scripts/verify.mjs" /abs/path/build-screenshot.png /abs/path/design-dna.json
+```
+
+## Credits
+
+Built on ideas and material from obra/superpowers, zanwei/design-dna and nexu-io/open-design,
+adapted to Leeward's rules. See `NOTICE.md` and `licenses/`.

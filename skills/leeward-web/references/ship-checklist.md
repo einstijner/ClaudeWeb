@@ -5,13 +5,16 @@ Don't call a build finished until every line is true, or the handoff says why no
 ## Looks right
 - [ ] Screenshotted at 390px, 768px and 1440px; nothing overflows, overlaps or wraps badly.
 - [ ] No horizontal scroll on mobile. Tap targets ≥ 44px.
-- [ ] Passes the anti-slop list, every headline specific to this business.
+- [ ] Passes the hard rules and the anti-slop list; every headline specific to this business.
+- [ ] One accent colour, used at most about twice per screen. Type tracking follows `craft.md` (caps tracked out, display tightened).
+- [ ] If there's a `design-dna.json`: `verify.mjs` passes on the 1440px screenshot.
 - [ ] Every photo crops well at every width (check `object-position`).
 - [ ] 404 page and footer designed, not default.
 
 ## Works
 - [ ] The main action (book / reserve / enquire / WhatsApp) is reachable from every screen on mobile.
-- [ ] Form: validation, inline success and failure, fallback contact route, test submission done.
+- [ ] Form: validation on blur, submitting state, inline success and failure, input kept on failure, fallback contact route, test submission done.
+- [ ] Every state rendered: hover, focus, disabled, loading, empty, error, long text.
 - [ ] Every link and phone/WhatsApp/email link works. No `href="#"`.
 - [ ] `npm run build` and `npm run lint` pass.
 
