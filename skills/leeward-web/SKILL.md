@@ -48,7 +48,8 @@ a new site does every step.
 
 1. **Brief.** Understand the business before designing: who books, what they book, how they pay or
    enquire, what makes this place different. Read what the owner gave you first; ask only what's still
-   missing, in one short batch. Never invent prices, reviews, awards, stats or names. Ask where the
+   missing, in one short batch. Never invent prices, reviews, awards, stats or names. Ask for the logo
+   first: it sets the palette and the type mood. Ask where the
    photos come from and whether the client has terms, policies and a registration number
    (`legal.md`).
    (`process.md` → Brief.)
