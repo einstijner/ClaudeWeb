@@ -34,6 +34,11 @@ above the fold.
 **Weights.** Usually three: read (400), emphasise (500–600), announce (600–700). Antigravity shows a
 huge headline can sit at 400–450 and still dominate; don't default to bold.
 
+**Font weight on the wire.** Japanese, Chinese and Korean fonts (Shippori Mincho, Noto Serif JP…) ship as
+dozens of files even with `subsets: ["latin"]`; one cost Hanami 4MB and a 26-second LCP. For an English
+site, use a Latin face and get any Japanese mood from spacing and photography. Load only the weights used
+(usually 2 per family) and check `.next/static/media` stays under about 200KB.
+
 **Pairing.** At most 2 families (display + body, or one family at several weights). Always declare a
 fallback stack. Never `system-ui` alone as the personality.
 

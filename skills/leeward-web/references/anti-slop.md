@@ -76,6 +76,12 @@ From [nutlope/hallmark](https://github.com/nutlope/hallmark) (MIT), the patterns
 - **The stock close:** an email sign-up band as the last section on a business that doesn't send a
   newsletter.
 
+## Photo stand-ins (when the client has no photos yet)
+
+- Light stand-ins in a paper tone with a hairline border and a caption saying what photo goes there. Never
+  dark slabs: they turn a warm site black and empty (found in the Hanami test build).
+- At most two on a page; slim (3:1) for wide ones. If the business name is strong, let the type lead the hero.
+
 ## Build floor (mechanical, always)
 
 - Every colour and font goes through a token on `:root`; no literal colours or `font-family` outside it.

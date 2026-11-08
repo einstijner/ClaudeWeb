@@ -4,6 +4,8 @@ The owner's corrections, newest first. Each is a rule with its reason. These ove
 
 <!-- Format: - YYYY-MM-DD: RULE. Why: REASON. -->
 
+- 2026-11-08 (Hanami test build, self-found): don't scrape or work around login walls and rate limits on Instagram/Facebook/Google to get a client's photos. Ask the owner to send them. Why: the session's safety checks block it, and the photos need permission anyway.
+
 - 2026-11-08: SEO, speed, security and legal rules are hard launch gates, and they outrank design choices. Why: the owner wants sites that rank, load fast and give nobody grounds to sue.
 
 - 2026-11-08: The hard rules beat reference sites. Learn why a reference works; don't copy its pill buttons or two-button heroes. Why: most of the owner's favourite sites break the owner's own rules.

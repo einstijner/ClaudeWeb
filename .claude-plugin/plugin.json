@@ -1,6 +1,6 @@
 {
   "name": "leeward-web",
   "description": "Leeward's website build playbook: stack, design feels, hard rules, anti-slop list and ship checklist.",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "author": { "name": "Leeward Digital" }
 }
