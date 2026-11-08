@@ -4,6 +4,8 @@ The owner's corrections, newest first. Each is a rule with its reason. These ove
 
 <!-- Format: - YYYY-MM-DD: RULE. Why: REASON. -->
 
+- 2026-11-08: Get the client's logo before choosing colours or fonts, and take the palette and type mood from it (measure the colours). Never invent a palette from the business name. Why: for Hanami I guessed warm paper and a blossom pink from the name; the real logo is pure black and white with a thin geometric sans, and the site had to be restyled.
+
 - 2026-11-08 (Hanami test build, self-found): don't scrape or work around login walls and rate limits on Instagram/Facebook/Google to get a client's photos. Ask the owner to send them. Why: the session's safety checks block it, and the photos need permission anyway.
 
 - 2026-11-08: SEO, speed, security and legal rules are hard launch gates, and they outrank design choices. Why: the owner wants sites that rank, load fast and give nobody grounds to sue.
