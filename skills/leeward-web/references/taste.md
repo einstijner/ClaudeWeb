@@ -29,6 +29,13 @@ Pick one at the start from the brief and the client's brand, and say which you p
 | **Simple** | Small local businesses, one-page sites, a single offer | One clean sans for everything | Neutral + brand accent | One page, short sections, booking/contact always one tap away | Minimal |
 | **In-depth** | Many products, routes, menus, rooms; info-heavy clients | Highly legible sans, clear heading hierarchy | Neutral + accent used for wayfinding | Detail pages per product, filters/tabs, FAQ, comparison tables; structured, scannable | Minimal; speed matters more |
 
+### Open question: eyebrows, tracked caps and accent words
+
+Reel Charters and several of the owner's references (ZapCat, Leeward Digital, Tres) use small
+uppercase labels above headings, and one coloured or italic word in headlines. Hallmark lists all of these
+as AI tells when they're used by reflex. Until the owner decides: **at most one eyebrow and one accent
+word per page**, where they carry meaning, never on every section.
+
 Reel Charters is **premium leaning in-depth**: Fraunces + Manrope, navy/ocean palette, photo-led hero
 with no buttons, detail pages per boat and island, booking prefilled from every card.
 
@@ -54,8 +61,8 @@ Studied 2026-11-07 (screenshots at 1440px and 390px, styles measured in the brow
 | Reel Charters (Leeward) | Premium, in-depth | Photo-led hero with no buttons, booking prefilled from every boat/island card, WhatsApp fallback when the form fails. |
 
 **Patterns across all of them:** one photo/product/video does the work in the hero; one type family or
-one display + one body; one accent colour; very little copy above the fold; a small "who/where"
-line above the headline; big headline with tight tracking.
+one display + one body; one accent colour; very little copy above the fold; big headline with tight
+tracking. Several add a small "who/where" line above the headline (see the open question below).
 
 **Where they break the owner's rules (don't copy these parts):** Tres, Apple, Antigravity and Leeward
 use pill buttons; Apple, Leeward and ZapCat put two buttons in the hero; Leeward's soft blue

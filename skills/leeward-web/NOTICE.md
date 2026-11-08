@@ -15,4 +15,9 @@ This skill is Leeward's own work, and it includes or adapts material from these 
   Leeward's hard rules and Next.js stack. Some of that material was itself adapted from
   refero_skill (MIT).
 
+- **Hallmark** by the Hallmark contributors, https://github.com/nutlope/hallmark, MIT licence.
+  `references/anatomy.md`, `references/review.md` and the Hallmark sections of
+  `references/anti-slop.md` adapt its page anatomy, hero-first and fresh-context review steps, and its
+  gates. Its themes, photo library and scripts are not included.
+
 The full licence texts are in `licenses/`.

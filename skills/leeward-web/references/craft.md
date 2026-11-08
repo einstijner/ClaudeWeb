@@ -27,7 +27,7 @@ above the fold.
 | --- | --- |
 | Body | 0 |
 | Small text, labels, buttons | +0.01 to +0.02em |
-| ALL CAPS (eyebrows, tags) | **+0.06 to +0.16em, always** |
+| ALL CAPS (rare: see `anti-slop.md`) | **+0.06 to +0.16em, always** |
 | Headings 32px+ | −0.01 to −0.02em |
 | Display 48px+ | −0.02 to −0.04em |
 
@@ -47,7 +47,7 @@ names together ("St.&nbsp;Barts").
 5–10%; semantic colours (success, error) only where needed; effects (gradients, glows) under 1%, and
 usually zero.
 
-**Accent discipline.** At most about 2 visible uses of the accent per screen (for example, the eyebrow and
+**Accent discipline.** At most about 2 visible uses of the accent per screen (for example, a highlighted word and
 the primary button). Links in body text can be the ink colour, underlined.
 
 **Contrast gates.** Body text 4.5:1 minimum; large text (24px+, or 19px+ bold) 3:1; UI components and

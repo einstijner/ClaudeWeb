@@ -46,6 +46,54 @@ finished. Partly adapted from open-design's anti-AI-slop rules (Apache-2.0).
   cookie notice should be small.
 - Social icons for accounts that don't exist, or `href="#"`.
 
+## Template tells from Hallmark (must fix)
+
+From [nutlope/hallmark](https://github.com/nutlope/hallmark) (MIT), the patterns that read as machine-made:
+
+- **Eyebrows above every heading.** A small label ("OUR FLEET", "WHY US") over each section title is
+  the most common AI tell. At most one per page where it carries real information (the hero's
+  location line), and never over every section. *(Open question for the owner; see `taste.md`.)*
+- **One coloured or italic word in a headline,** used by reflex on every heading. At most once per site,
+  and only when that word is the point. *(Open question for the owner.)*
+- **Tracked capitals everywhere:** nav links, tags, captions and table heads in spaced-out caps. Labels
+  are the body face, a step smaller, sentence case.
+- **Template punctuation:** meta strings joined with middle dots on every card ("Half day · 6 guests · From $"),
+  arrows glued to every link ("Learn more →"), decorative status dots before labels.
+- **Card inside a card;** three equal icon-on-top tiles; the same hover lift on every card; images
+  zooming on hover.
+- **Hand-drawn browser windows, phone frames or fake product UIs** made of divs.
+- **Drawn illustrations** (SVG beaches, palm trees, boats) where a photograph belongs; empty
+  gradient boxes standing in for photos; rows of identical dots or icons standing for a number.
+- **The photo wall:** below the hero, photos covering more than about a third of the page so it reads as a
+  stock gallery (a real gallery page is the exception).
+- **The echo:** the same fact (a price, a time) repeated in four or more sections.
+- **The fake send:** a form that says "Sent!" or "Reserved!" with nothing behind it. No success state
+  until the form is really wired.
+- **Too many words:** more than about 80 words on any one screen at 1440px. Fullness comes from scale and
+  photography, never more copy.
+- **Thin sections:** a heading and a line floating in a wide empty space; section headings under 40px
+  on desktop.
+- **The stock close:** an email sign-up band as the last section on a business that doesn't send a
+  newsletter.
+
+## Build floor (mechanical, always)
+
+- Every colour and font goes through a token on `:root`; no literal colours or `font-family` outside it.
+- Never `transition: all`; never animate `width`, `height`, `top`, `left`, `margin` or `padding`.
+- `overflow-x: clip` on `html` and `body`; never `100vw` widths; no horizontal scroll at any width from 320
+  to 1920.
+- Image grids use `minmax(0, 1fr)`; display headings have `overflow-wrap: break-word; min-width: 0`.
+- Hero height in `svh`/`dvh`, not `vh`. Container capped (about 1240–1440px) and centred at 1920.
+- `:focus-visible` on every interactive element, appearing instantly, 3:1 contrast against its background.
+- Every animation has a reduced-motion fallback; content is visible with JavaScript off (never hide
+  content behind a reveal class that only JavaScript removes).
+- Autoplay video is `muted playsinline` with a poster; never `loading="lazy"` on the LCP image.
+- Controls 44–52px tall; inputs and the button beside them share a height; disabled shown by more
+  than opacity alone.
+- Button labels and main nav links never wrap at any width.
+- No two `position: sticky; top: 0` elements fighting each other.
+- One icon library per site; decorative SVGs get `aria-hidden="true"`.
+
 ## Build tells
 
 - Tailwind class soup or an untouched UI-kit look when the brand needs its own.

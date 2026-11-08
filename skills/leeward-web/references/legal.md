@@ -35,7 +35,10 @@ licence that allows commercial use on a website. Record it.
 - **People in photos:** an identifiable person needs a model release or clear consent for marketing
   use. Children: written parental consent or don't use it. Avoid identifiable people from stock in
   ways that imply endorsement.
-- **Stock:** only from sources with a commercial licence (Unsplash, Pexels, or paid stock) and within
+- **Stock:** only from sources with a commercial licence (Unsplash, Pexels, Wikimedia Commons CC0/CC BY
+  with the required credit, or paid stock). Hallmark reports that Unsplash's and Pexels' terms restrict
+  AI tools selecting their images; until that's checked against their current terms, the owner or client
+  picks stock photos, not Claude, and the licence is recorded and within
   the licence's limits (no implying the person endorses the business, no reselling as-is). Credit even
   when not required, as Reel Charters does. Watermarked previews are never used.
 - **Never:** images from Google Images, Instagram, Pinterest, TripAdvisor, competitors' sites or
