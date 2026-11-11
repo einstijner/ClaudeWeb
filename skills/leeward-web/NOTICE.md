@@ -20,4 +20,16 @@ This skill is Leeward's own work, and it includes or adapts material from these 
   `references/anti-slop.md` adapt its page anatomy, hero-first and fresh-context review steps, and its
   gates. Its themes, photo library and scripts are not included.
 
+- **Elephant-Goldfish Model** by Google LLC, https://github.com/google/elephant-goldfish-model,
+  Apache License 2.0. `references/reviewers.md`, `references/drift.md`, the whole-page review in
+  `references/review.md`, and the brief and direction steps in `references/process.md` adapt its
+  ideas: fresh-context reviewers with separate lenses (its comprehension, design critic, zoom-out and
+  inventive-catalyst personas), the paraphrase-first test, Blocker/Major/Nit severities, the resolve
+  categories and their rules, reviewer status (`not run` is not zero findings), settled findings and
+  the clean-round, cap and churn rules, its drift report, and its no-flattery, critique-first
+  constraints. Changes: rewritten from scratch for reviewing websites rather than design documents,
+  personas replaced with five website lenses, the multi-stage pipeline and interactive gates dropped,
+  the convergence rule shortened to one clean round with a three-round cap, and a labelled
+  self-review fallback added for claude.ai. No EGM files are copied.
+
 The full licence texts are in `licenses/`.

@@ -58,7 +58,13 @@ Don't call a build finished until every line is true, or the handoff says why no
 - [ ] Footer: legal/trading name, address, contact, registration number if any, © year. Accessibility statement page.
 - [ ] Original copy only, nothing lifted from competitors or review sites.
 
+## Reviewed (`review.md`)
+- [ ] Fresh-eyes review ran with the lenses for the job: every lens completed (or is listed as `not run`), no unsettled Blocker or Major left. A self-review is called a self-review.
+- [ ] A stranger's answer to "what is this place and how do I book?" (First visit lens) matches `brief.md`.
+- [ ] `review/review-report.md` saved; every ASK THE OWNER item put to the owner.
+
 ## Handoff
+- [ ] `brief.md` current: every decision the owner made is in it.
 - [ ] README: how to run, where each fact lives, what the client must do (e.g. activate FormSubmit).
 - [ ] List of placeholders and anything still needed from the client, including everything waiting on their lawyer.
 - [ ] Asset and licence log, third-party services list, account ownership list.

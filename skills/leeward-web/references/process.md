@@ -2,7 +2,9 @@
 
 How to work with the owner on a site, from first message to handoff. Adapted from the brainstorming,
 verification-before-completion, receiving-code-review and systematic-debugging skills in
-[obra/superpowers](https://github.com/obra/superpowers) (MIT).
+[obra/superpowers](https://github.com/obra/superpowers) (MIT). Writing the brief down, the weakest
+point and the direction stress-test are adapted from the brainstorm skill in Google's
+[elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) (Apache-2.0).
 
 ## Brief
 
@@ -26,9 +28,18 @@ design. Good questions for a client site:
 
 If the owner says "just build it", stop asking and make sensible calls, listing your assumptions.
 
+**Then write it down.** Save `brief.md` at the project root: the business in two or three sentences,
+the visitor and their one job, what makes the place different, the facts the owner gave (with where
+each came from), what's still missing, and the decisions made so far. Add every later decision the
+owner makes in conversation ("no prices", "the sunset photo leads") with its date. The conversation
+ends; the brief stays. It's what the fresh-eyes reviewers compare the page with (`review.md`), and what
+the next session reads before touching the site (`drift.md`).
+
 ## Direction (sign-off before building)
 
-For a new site or a redesign, propose before you build. Keep it short enough to read on a phone:
+For a new site or a redesign, propose before you build. Keep it short enough to read on a phone,
+and open with the brief in two sentences so the owner can catch a misunderstanding before it costs a
+build:
 
 - **Feel:** premium / playful / simple / in-depth, and why.
 - **Draws on:** which reference sites or DNA file.
@@ -37,8 +48,18 @@ For a new site or a redesign, propose before you build. Keep it short enough to 
 - **Pages/sections:** list.
 - **Booking path:** how a visitor goes from landing to enquiry/booking, and the fallback.
 
+- **Weakest point:** the strongest case against this direction, in one line ("premium may read cold
+  to cruise-ship day-trippers who want the price and the time"). Find it before the owner does.
+
 If there are two genuinely different good directions, show both in a line each and recommend one.
 Wait for a yes. Small changes to an existing site don't need this step.
+
+**Stress-test it first (new sites, Claude Code).** Before sending the direction, give one fresh
+subagent only `brief.md` and the direction text (no conversation) and ask it, with the shared rules
+from `reviewers.md`: does the direction serve the visitor's job in the brief? Is any fact in it not in
+the brief (invented)? Does it break a hard rule in `anti-slop.md`? Would the hero headline work
+unchanged for a competitor? What's missing from the booking path? Fix what it finds, or mention it
+in the proposal; don't send the owner a direction a stranger could pick apart in a minute.
 
 ## Plan (bigger builds)
 
@@ -68,7 +89,8 @@ against `anti-slop.md` and the checklist, not that the code compiled.
 When the owner critiques something:
 - **Understand it fully** before changing anything. If one point is unclear, ask about that point
   before implementing the rest, because points are often related.
-- **Don't perform agreement.** No "You're absolutely right!" Just fix it and say what changed.
+- **Don't perform agreement.** No "You're absolutely right!", no "great point", no apology. Just
+  fix it and say what changed, or give the corrected reasoning.
 - **Push back when it's wrong for the client,** with the reason (for example, it would break
   accessibility contrast or the booking flow), then let the owner decide.
 - **Generalise it.** Ask yourself: would this correction apply to other sites too? If yes, write it to
