@@ -1,154 +1,130 @@
 # Never ship these
 
-These mark a site made from a template, or by AI without thought. Any one of them means the section isn't
-finished. Partly adapted from open-design's anti-AI-slop rules (Apache-2.0).
+Anything here means the section isn't finished. Sources: open-design's anti-AI-slop rules
+(Apache-2.0), Hallmark's template tells (MIT), Impeccable's default looks (Apache-2.0); see `NOTICE.md`.
 
-## Owner's hard rules (no exceptions, whatever a reference site does)
+## The owner's hard rules (whatever a reference site does)
 
-1. **No pill-shaped buttons.** Buttons, chips, tags and inputs use a 0–10px radius.
-2. **No two buttons in the hero.** One action at most, or none.
-3. **No drastic fonts or colours.** No novelty, script, distorted or ultra-condensed display faces
-   (unless the owner approves one for a playful site), no neon, no multi-colour palettes, no decorative
-   gradients. One accent colour per site.
+1. **No pill-shaped buttons.** Buttons, chips, tags and inputs: 0–10px radius. Circles only for icon
+   badges that aren't buttons.
+2. **One action in the hero, or none.** Never a primary + secondary pair ("Book now" + "Learn more").
+   Zero is fine when the photo and headline carry it and Book lives in the header.
+3. **No drastic fonts or colours.** No novelty, script, distorted, ultra-condensed or ultra-wide
+   display faces (unless the owner approves one for a playful site), no all-caps paragraphs, no neon,
+   no multi-colour palettes, no decorative gradients. **One accent colour per site,** taken from the
+   brand or the place. Personality comes from photography, spacing and copy.
 
-## The tells (must fix)
+## Must fix
 
-1. **Default AI colours.** Tailwind indigo/violet (`#6366f1`, `#4f46e5`, `#8b5cf6`, `#7c3aed`,
-   `#a855f7`) or any accent that doesn't come from the brand or place.
-2. **Two-stop "trust" gradient** on a hero or as section background (purple→blue, blue→cyan,
-   indigo→pink), gradient text, glowing blobs.
-3. **Emoji as icons** (✨🚀🎯⚡🔥💡) in headings, buttons or lists. Use monoline SVG icons in
-   `currentColor`, and only where they carry meaning.
-4. **Invented facts.** Testimonials, star ratings, "500+ happy guests", "#1 in SXM", awards, years in
-   business, prices, staff names. Use a clearly marked placeholder and list it in the handoff.
-5. **Filler copy.** Lorem ipsum, "Feature one/two/three", "Your journey begins", "Experience the
-   magic", "Unforgettable", "elevate", "seamless", "curated", "nestled", "paradise awaits", "look no
-   further", "world-class".
-6. **Rounded card with a coloured left border.**
-7. **Generic headline.** Swap in a competitor's name; if it still works, rewrite it.
-
-## Soft tells (should fix)
-
-- The default SaaS order: centred hero → three icon cards → testimonial carousel → pricing → FAQ → CTA,
-  with no variation. Hospitality pages are built around photos, places, the offer and the booking path.
-- Everything centred, every section the same height and padding, every card identical.
-- The accent used all over the screen (more than about 2 visible uses per screen).
-- Inter/Roboto/system font as the whole personality.
-- Three-word triads ("Relax. Explore. Indulge.") and rhetorical-question headlines.
-- Stock photos of people pointing at laptops, handshakes, posed models; placeholder-image services
-  (`placehold.co`, `picsum.photos`) in anything the client sees.
-- Carousels for primary content (nobody sees slide 2). Use a grid or one strong image.
-- Scroll fade-ins on every section, parallax for its own sake, hover animations on everything.
-- Decorative blob, wave or particle backgrounds that mean nothing. (Antigravity's particle field
-  works because it's the product's identity; a beach bar doesn't need one.)
-- Glassmorphism as a style. One glass button over a photo is fine.
-- Dark-mode toggles, chat widgets, newsletter popups and cookie walls nobody asked for. A required
-  cookie notice should be small.
-- Social icons for accounts that don't exist, or `href="#"`.
-
-## Template tells from Hallmark (must fix)
-
-From [nutlope/hallmark](https://github.com/nutlope/hallmark) (MIT), the patterns that read as machine-made:
-
-- **Eyebrows above every heading.** A small label ("OUR FLEET", "WHY US") over each section title is
-  the most common AI tell. At most one per page where it carries real information (the hero's
-  location line), and never over every section. *(Open question for the owner; see `taste.md`.)*
-- **One coloured or italic word in a headline,** used by reflex on every heading. At most once per site,
-  and only when that word is the point. *(Open question for the owner.)*
-- **Tracked capitals everywhere:** nav links, tags, captions and table heads in spaced-out caps. Labels
-  are the body face, a step smaller, sentence case.
-- **Template punctuation:** meta strings joined with middle dots on every card ("Half day · 6 guests · From $"),
-  arrows glued to every link ("Learn more →"), decorative status dots before labels.
-- **Card inside a card;** three equal icon-on-top tiles; the same hover lift on every card; images
-  zooming on hover.
-- **Hand-drawn browser windows, phone frames or fake product UIs** made of divs.
-- **Drawn illustrations** (SVG beaches, palm trees, boats) where a photograph belongs; empty
-  gradient boxes standing in for photos; rows of identical dots or icons standing for a number.
-- **The photo wall:** below the hero, photos covering more than about a third of the page so it reads as a
-  stock gallery (a real gallery page is the exception).
+**Facts and words**
+- **Invented facts:** reviews, ratings, "500+ happy guests", "#1 in SXM", awards, years, prices, staff
+  names. Use a marked placeholder and list it in the handoff (`legal.md`).
+- **Generic headline:** swap in a competitor's name; if it still works, rewrite it.
+- **Filler copy:** lorem ipsum, "Your journey begins", "Experience the magic", "Unforgettable",
+  "elevate", "seamless", "curated", "nestled", "paradise awaits", "look no further", "world-class".
+- **Too many words:** more than about 80 on one screen at 1440px. Fullness comes from scale and photos.
 - **The echo:** the same fact (a price, a time) repeated in four or more sections.
-- **The fake send:** a form that says "Sent!" or "Reserved!" with nothing behind it. No success state
-  until the form is really wired.
-- **Too many words:** more than about 80 words on any one screen at 1440px. Fullness comes from scale and
-  photography, never more copy.
-- **Thin sections:** a heading and a line floating in a wide empty space; section headings under 40px
-  on desktop.
-- **The stock close:** an email sign-up band as the last section on a business that doesn't send a
-  newsletter.
+- **The fake send:** "Sent!" or "Reserved!" with nothing wired behind it.
 
-## Default looks (from Impeccable)
+**Colour and surface**
+- Default AI colours (Tailwind indigo/violet: `#6366f1`, `#4f46e5`, `#8b5cf6`, `#7c3aed`, `#a855f7`),
+  or any accent not from the brand or place.
+- Two-stop "trust" gradients (purple→blue, blue→cyan, indigo→pink), gradient text, glowing blobs.
+- Shadows with no offset (a coloured glow or halo); hard offset "block" shadows (`4px 4px 0`) outside a
+  deliberately brutalist site.
 
-From [pbakaus/impeccable](https://github.com/pbakaus/impeccable) (Apache-2.0). Left to choose freely,
-AI-built sites land on a handful of looks whatever the business is. Any of them is fine when the
-client's logo, DNA or the owner asks for it; landing there by default means nobody decided.
-
-- **Warm cream page, high-contrast serif headline, terracotta or signal-red accent.** Claude's own
-  habit: warm, family and "boutique" subjects come out cream, italic serif and lamplight even when
-  nothing asked for it. Treat that first palette as already spent. (Hanami in `feedback-log.md` is this
-  exact failure.)
-- **Near-black page, one neon accent, glowing edges.**
-- **Editorial hairlines, italic display serif, small tracked mono labels.**
-- **Flat bright colour, black boxes, hard offset shadows (`4px 4px 0`), heavy condensed type.**
-- **The Caribbean postcard:** turquoise, sand and coral, palm-leaf shapes, wave dividers, a script
-  "paradise". The place is the photos' job, not the palette's.
-
-**The check:** could someone guess this site's look from its category alone ("beach bar, so turquoise
-and sand")? If yes, rework it from the logo, the photos and the DNA until they couldn't.
-
-**Reflex fonts.** These are the faces models reach for when they stop looking: Fraunces, Playfair
-Display, Cormorant, Lora, Crimson, Newsreader, DM Serif, DM Sans, Outfit, Plus Jakarta Sans, Space
-Grotesk, Space Mono, IBM Plex, Syne, Instrument Sans, Inter as a display face. Using one needs a reason
-specific to this client (the logo's lettering, a DNA file); "it's a yacht, so a serif" is not a reason.
-*(Reel Charters uses Fraunces; open question for the owner whether that stays the house premium face.)*
-
-More tells, all must fix:
-- A shadow with no offset (a coloured glow or halo around a card or button). Shadows have an offset and a soft blur.
-- Hard offset "block" shadows outside a deliberately brutalist site.
+**Template patterns**
+- **Eyebrows over every heading** ("OUR FLEET", "WHY US") and **a coloured or italic word in every
+  headline.** Current limit: one of each per page, only where it carries meaning (open question,
+  `taste.md`).
+- Tracked capitals everywhere: nav links, tags, captions, table heads. Labels are the body face, a step
+  smaller, sentence case.
+- Template punctuation: middle-dot meta strings on every card ("Half day · 6 guests · From $"),
+  arrows on every link ("Learn more →"), decorative status dots.
+- Card inside a card; three equal icon-on-top tiles; a rounded card with a coloured left border; the
+  same hover lift or image zoom on every card.
 - Section numbers (01 / 02 / 03) when the order means nothing to the visitor.
+- Emoji or glyphs as icons. One SVG icon library in `currentColor`, only where an icon carries meaning.
+- Drawn illustrations (SVG beaches, palms, boats) or empty gradient boxes where a photograph belongs;
+  div-drawn browser windows or phone frames; circle or polygon cut-outs faking the edge of something
+  in a photo; rows of dots or icons standing for a number.
+- **The photo wall:** below the hero, photos covering more than about a third of the page (a real
+  gallery page is the exception).
+- **Thin sections:** a heading and a line adrift in empty space; section headings under 40px on desktop.
+- **The stock close:** an email sign-up band ending the page of a business that sends no newsletter.
+- Monospace as decoration rather than for times, coordinates or codes.
 - A modal or pop-up for something that could sit on the page.
-- Monospace type as decoration rather than for times, coordinates or codes.
-- A circle or polygon cut-out pretending to follow the edge of something in a photo. Use a real cut-out image or none.
 
-## Photo stand-ins (when the client has no photos yet)
-
-- Light stand-ins in a paper tone with a hairline border and a caption saying what photo goes there. Never
-  dark slabs: they turn a warm site black and empty (found in the Hanami test build).
-- At most two on a page; slim (3:1) for wide ones. If the business name is strong, let the type lead the hero.
-
-## Build floor (mechanical, always)
-
-- Every colour and font goes through a token on `:root`; no literal colours or `font-family` outside it.
-- Never `transition: all`; never animate `width`, `height`, `top`, `left`, `margin` or `padding`.
-- `overflow-x: clip` on `html` and `body`; never `100vw` widths; no horizontal scroll at any width from 320
-  to 1920.
-- Image grids use `minmax(0, 1fr)`; display headings have `overflow-wrap: break-word; min-width: 0`.
-- Hero height in `svh`/`dvh`, not `vh`. Container capped (about 1240–1440px) and centred at 1920.
-- `:focus-visible` on every interactive element, appearing instantly, 3:1 contrast against its background.
-- Every animation has a reduced-motion fallback; content is visible with JavaScript off (never hide
-  content behind a reveal class that only JavaScript removes).
-- Autoplay video is `muted playsinline` with a poster; never `loading="lazy"` on the LCP image.
-- Controls 44–52px tall; inputs and the button beside them share a height; disabled shown by more
-  than opacity alone.
-- Button labels and main nav links never wrap at any width.
-- No two `position: sticky; top: 0` elements fighting each other.
-- One icon library per site; decorative SVGs get `aria-hidden="true"`.
-
-## Build tells
-
-- Tailwind class soup or an untouched UI-kit look when the brand needs its own.
-- More than about 12 raw hex values outside `:root`, which means the tokens weren't followed.
-- Images without dimensions or `sizes`, giant unoptimised JPEGs, `<img>` where `next/image` fits.
+**Build**
+- Tailwind class soup or an untouched UI-kit look; more than about 12 raw hex values outside `:root`.
+- Images without dimensions or `sizes`, unoptimised JPEGs, `<img>` where `next/image` fits.
 - Forms that fail silently or leave no other way to reach the business.
 - Layout that only works at 1440px. Most guests book on their phone.
 
-## Adding soul without breaking the rules
+## Should fix
 
-Aim for about 80% proven patterns and about 20% choices that belong to this client:
-- **One bold move:** a type choice, a single colour decision, an unexpected crop or proportion.
-- **Voice:** copy only this business would write ("Anguilla and St. Barts are full-day only").
-  Button labels that say exactly what happens ("Request this trip" rather than "Submit").
-- **One remembered detail:** ZapCat's GPS coordinates in the corner, Tres's season label, a menu
-  that changes with the time of day.
+- The default SaaS order (centred hero → three icon cards → testimonial carousel → pricing → FAQ →
+  CTA). Build around the visitor's job instead (`anatomy.md`).
+- Everything centred, every section the same height, every card identical.
+- Inter, Roboto or the system font as the whole personality.
+- Three-word triads ("Relax. Explore. Indulge.") and rhetorical-question headlines.
+- Stock clichés (laptops, handshakes, posed models); `placehold.co` or `picsum.photos` in anything the
+  client sees.
+- Carousels for primary content. Use a grid or one strong image.
+- Fade-ins on every section, parallax for its own sake, hover animation on everything.
+- Blob, wave or particle backgrounds that mean nothing; glassmorphism as a style (one glass button over
+  a photo is fine).
+- Dark-mode toggles, chat widgets, newsletter pop-ups and cookie walls nobody asked for.
+- Social icons for accounts that don't exist, or `href="#"`.
 
-The test: screenshot any section and show it to a stranger. If they can tell which business it
-belongs to, it has soul. If not, it's a template.
+## Default looks
+
+Left to choose, AI-built sites land on a few looks whatever the business is. Fine when the logo, the
+DNA or the owner asks for one; landing there by default means nobody decided.
+- **Cream page, high-contrast serif, terracotta or red accent.** Claude's own habit for anything warm,
+  family or "boutique" (the Hanami failure in `feedback-log.md`). Treat that first palette as spent.
+- Near-black page, one neon accent, glowing edges.
+- Editorial hairlines, italic display serif, tracked mono labels.
+- Flat bright colour, black boxes, block shadows, heavy condensed type.
+- **The Caribbean postcard:** turquoise, sand and coral, palm leaves, wave dividers, a script
+  "paradise". The place is the photos' job, not the palette's.
+
+**The check:** could someone guess the look from the category alone ("beach bar, so turquoise and
+sand")? If yes, rework it from the logo, the photos and the DNA.
+
+**Reflex fonts** need a reason specific to this client (the logo's lettering, a DNA file); "it's a
+yacht, so a serif" isn't one: Fraunces, Playfair Display, Cormorant, Lora, Crimson, Newsreader, DM
+Serif, DM Sans, Outfit, Plus Jakarta Sans, Space Grotesk, Space Mono, IBM Plex, Syne, Instrument Sans,
+Inter as display. (Reel Charters uses Fraunces: open question, `taste.md`.)
+
+## Photo stand-ins (no client photos yet)
+
+Light boxes in a paper tone with a hairline border and a caption saying which photo goes there; never
+dark slabs (Hanami). At most two per page; slim (3:1) for wide ones. If the name is strong, let the
+type lead the hero.
+
+## Build floor (mechanical, always)
+
+- Every colour and font through a token on `:root`.
+- Never `transition: all`; animate only `transform` and `opacity`.
+- `overflow-x: clip` on `html` and `body`; never `100vw`; no horizontal scroll from 320 to 1920px.
+- Image grids `minmax(0, 1fr)`; display headings `overflow-wrap: break-word; min-width: 0`.
+- Hero in `svh`/`dvh`, never `vh`. Container capped (about 1240–1440px) and centred at 1920.
+- `:focus-visible` on everything interactive, instant, 3:1 against its background.
+- Reduced-motion fallback for every animation; content visible with JavaScript off.
+- Autoplay video `muted playsinline` with a poster; never `loading="lazy"` on the LCP image.
+- Controls 44–52px tall; an input and its button share a height; disabled shown by more than opacity.
+- Button labels and main nav links never wrap.
+- No two `position: sticky; top: 0` elements fighting.
+- Decorative SVGs `aria-hidden="true"`.
+
+## Soul
+
+About 80% proven patterns, 20% choices that belong to this client:
+- **One bold move:** a type choice, a colour decision, an unexpected crop or proportion.
+- **Voice:** copy only this business would write ("Anguilla and St. Barts are full-day only"); buttons
+  that say what happens ("Request this trip", not "Submit").
+- **One remembered detail:** ZapCat's GPS coordinates, Tres's season label, a menu that changes with
+  the time of day.
+
+The test: show any section to a stranger. If they can tell which business it belongs to, it has soul.

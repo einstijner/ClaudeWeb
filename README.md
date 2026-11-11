@@ -35,8 +35,8 @@ After changing the skill, run `./scripts/build-zip.sh` and upload the new zip.
 
 | File | What it holds |
 | --- | --- |
-| `SKILL.md` | The workflow Claude follows and which file wins in a conflict |
-| `references/anti-slop.md` | Hard rules and what never ships |
+| `SKILL.md` | The workflow, which file wins in a conflict, and which files to read for each size of job |
+| `references/anti-slop.md` | The owner's hard rules and everything that never ships, in one list |
 | `references/seo-performance.md` | Hard speed budgets (Core Web Vitals, Lighthouse), technical and local SEO, structured data |
 | `references/security.md` | Secrets, security headers, forms, payments, dependencies, account ownership |
 | `references/legal.md` | Photo and font rights, copyright, truthful claims and reviews, prices, disclaimers, privacy and cookies, accessibility |
@@ -48,7 +48,7 @@ After changing the skill, run `./scripts/build-zip.sh` and upload the new zip.
 | `references/craft.md` | Type, colour, spacing, shape, motion, states, forms, UX laws, accessibility |
 | `references/dna/` | Design DNA: schema, generation guide, how Leeward applies it, saved DNA files |
 | `scripts/` | Measure colours from a screenshot and score a build against a DNA file (Node, needs `sharp`) |
-| `references/taste.md` | The constants, the four feels, and notes on each reference site |
+| `references/taste.md` | The feels, notes on each reference site, and the open questions for the owner |
 | `references/stack.md` | Default stack and project structure |
 | `references/ship-checklist.md` | Checks before anything is called finished |
 | `references/feedback-log.md` | Corrections from Leeward, newest first; these override everything else |

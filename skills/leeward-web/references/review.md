@@ -6,10 +6,9 @@ is reviewed by reviewers that didn't build it and are told nothing about it. You
 the memory of the project and decide what to do with their findings; they keep none and judge only
 what is on the screen.
 
-Hero-first is adapted from Hallmark ([nutlope/hallmark](https://github.com/nutlope/hallmark), MIT).
-The lenses, the resolve step and the rules for when to stop are adapted from Google's
-Elephant-Goldfish Model ([google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model),
-Apache-2.0).
+Adapted from Hallmark (hero first, MIT), Google's Elephant-Goldfish Model (lenses, deciding on
+findings, when to stop, Apache-2.0) and Impeccable (capture checks, fix scoring, Apache-2.0); see
+`NOTICE.md`.
 
 ## Hero first
 
@@ -17,13 +16,11 @@ Build the header and the hero only. Screenshot at 1280×800, 1440×900, 1920×10
 Check:
 - The headline, the one sentence, the one action (or none, by design) and the photo's focal point
   are all visible at 1280×800 without scrolling.
-- The headline is short (about 7 words or fewer) and the supporting sentence is about 12 words or fewer. The
-  hero holds no more than the headline, one sentence and the action.
-- Size it with `svh`/`dvh`, not `vh` (mobile browser bars).
-- At 1920 the container is capped and centred: gutters grow, the grid doesn't gain columns.
+- The headline is about 7 words or fewer, the supporting sentence about 12 or fewer, and the hero holds
+  nothing else but the action.
+- At 1920 the gutters grow; the grid doesn't gain columns.
 - No more than about 160px of empty band between the hero content and the fold.
 - The photo crops well at every size (`object-position` set per breakpoint where needed).
-
 - **The memory test:** if a visitor left after this one screen, what would they describe an hour
   later? "The boat at anchor off Tintamarre with the time and the Book button" passes; "a nice blue
   website" is a mood, and the hero isn't done.
@@ -43,12 +40,13 @@ screenshots (named by page and width), command output (build, lint, audit), the 
 Add `review/` to `.gitignore` unless the owner wants reviews kept. If you know the width the owner
 views on (their phone, their laptop), capture that too: it's the width they'll judge.
 
-**Check every capture before sending it** (from Impeccable, Apache-2.0). Let entrance animations
+Each lens in `reviewers.md` lists exactly what it gets; give it that and nothing more.
+
+**Check every capture before sending it.** Let entrance animations
 finish or turn them off first: an element still faded out reads as missing and gets "fixed" into a
 bug. Take full-page shots from the top of the document. Then open every file once and confirm it
 shows what its name says: no blank or black areas, no half-loaded images, the right page at the right
-width. A review of a broken screenshot is not a review. Each lens in `reviewers.md` lists
-exactly what it gets; give it that and nothing more.
+width. A review of a broken screenshot is not a review.
 
 **Never give a reviewer your intent.** No summary of the conversation, no "I did X on purpose", no
 "the owner wanted Y". `brief.md` is the one exception, and only for the lenses that list it. If a

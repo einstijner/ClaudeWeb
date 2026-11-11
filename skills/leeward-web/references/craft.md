@@ -1,9 +1,8 @@
 # Craft
 
 Rules for how type, colour, space, motion, states and forms behave on every Leeward site. The feel and
-DNA decide *which* fonts and colours; this file decides *how they're used*. Condensed and adapted from
-the craft guides in [nexu-io/open-design](https://github.com/nexu-io/open-design) (Apache-2.0, partly
-adapted there from refero_skill, MIT), with Leeward's hard rules applied on top.
+DNA decide *which* fonts and colours; this file decides *how they're used*. Adapted from open-design
+(Apache-2.0, partly from refero_skill, MIT) and Impeccable (Apache-2.0); see `NOTICE.md`.
 
 ## Typography
 
@@ -27,7 +26,7 @@ above the fold.
 | --- | --- |
 | Body | 0 |
 | Small text, labels, buttons | +0.01 to +0.02em |
-| ALL CAPS (rare: see `anti-slop.md`) | **+0.06 to +0.16em, always** |
+| ALL CAPS (rare) | **+0.06 to +0.16em, always** |
 | Headings 32px+ | −0.01 to −0.02em |
 | Display 48px+ | −0.02 to −0.04em |
 
@@ -88,18 +87,15 @@ flashes the wrong colour.
 - Full-bleed photography breaks the grid on purpose; the text stays on the grid.
 - More space above a heading than below it, so the heading belongs to what follows.
 
-**The parts the browser draws.** Theme them from the tokens; they ship with browser defaults otherwise,
-and models skip them most reliably (from Impeccable, Apache-2.0):
+**The parts the browser draws.** Theme them from the tokens; models skip these most reliably:
 `::selection` colours, `caret-color`, `accent-color` on checkboxes, radios and date pickers,
 `scrollbar-color` where a panel scrolls, `text-underline-offset` and thickness on links, and
 `font-variant-numeric: tabular-nums` wherever times, prices or durations line up in a column.
 
 ## Shape
 
-- Buttons, chips, tags and inputs have a 4–10px radius. **Never pill-shaped.** Square (0px) is allowed,
-  as ZapCat shows.
-- Cards and images take the radius set by the feel (0–20px), the same across the site.
-- Never a rounded card with a coloured left border; that's the stock AI dashboard tile.
+Controls 0–10px (`anti-slop.md`; square is fine, as ZapCat shows). Cards and images take one radius
+set by the feel (0–20px), the same across the site.
 
 ## Motion
 
@@ -116,11 +112,10 @@ transition). Don't animate to decorate or to "feel premium".
 - Mobile motion runs 20–30% shorter. Frequent effects (hover) stay at 200ms or under.
 - Easing: `cubic-bezier(0.2, 0, 0, 1)` for entering, plain `ease-out` for small things. No bounce
   unless the feel is playful.
-- Animate only `transform` and `opacity` (never layout properties).
 - `@media (prefers-reduced-motion: reduce)` removes movement (translate, scale, parallax, autoplay
   video loops); keep simple fades where a state change must still show.
-- Hero video: muted, `playsinline`, a poster image, a pause control, and a still image for reduced
-  motion and slow connections.
+- Hero video: a pause control and a still image for reduced motion and slow connections (budget in
+  `seo-performance.md`).
 
 ## States
 

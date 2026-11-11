@@ -2,9 +2,9 @@
 
 Each lens is a separate reviewer with no memory of the build: it sees the page, the files listed for
 it, and nothing else. One reviewer looking at everything misses things; five narrow ones, run at the
-same time, each find what the others skim past. Adapted from the reviewer personas in Google's
-Elephant-Goldfish Model ([google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model),
-Apache-2.0). How to run them and act on what they say is in `review.md`.
+same time, each find what the others skim past. Adapted from Google's Elephant-Goldfish Model and
+Impeccable (both Apache-2.0); see `NOTICE.md`. How to run them and act on what they say is in
+`review.md`.
 
 ## Which lenses for which job
 
@@ -88,8 +88,8 @@ job), the Forms and States sections of `craft.md`.
 >   Are sending, success and errors announced, and shown by more than colour?
 > - **Stress tester:** a 60-character name, emoji in the message, the back button and a refresh
 >   mid-form, a double tap on Send. Does anything break, lose input, or send twice?
-> What happens when sending fails? There must
-> be a WhatsApp or email route carrying what the visitor typed. Check every link, `tel:`, `mailto:`
+> What happens when sending fails? There must be a WhatsApp or email route carrying what the visitor
+> typed. Check every link, `tel:`, `mailto:`
 > and WhatsApp URL in the source. Count the taps from landing to sent.
 
 ## 4. Gates (would this pass launch?)

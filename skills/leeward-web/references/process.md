@@ -1,10 +1,7 @@
 # Process
 
-How to work with the owner on a site, from first message to handoff. Adapted from the brainstorming,
-verification-before-completion, receiving-code-review and systematic-debugging skills in
-[obra/superpowers](https://github.com/obra/superpowers) (MIT). Writing the brief down, the weakest
-point and the direction stress-test are adapted from the brainstorm skill in Google's
-[elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) (Apache-2.0).
+How to work with the owner on a site, from first message to handoff. Adapted from obra/superpowers
+(MIT), Google's Elephant-Goldfish Model and Impeccable (both Apache-2.0); see `NOTICE.md`.
 
 ## Brief
 
@@ -49,7 +46,6 @@ build:
 - **Hero:** what photo/video, what headline, the one action (or none).
 - **Pages/sections:** list.
 - **Booking path:** how a visitor goes from landing to enquiry/booking, and the fallback.
-
 - **Weakest point:** the strongest case against this direction, in one line ("premium may read cold
   to cruise-ship day-trippers who want the price and the time"). Find it before the owner does.
 
@@ -104,7 +100,7 @@ When the owner critiques something:
   `feedback-log.md` as a rule.
 - Apply one point at a time and check each one.
 
-**Vague words, concrete moves** (adapted from Impeccable's steering commands, Apache-2.0). When the
+**Vague words, concrete moves.** When the
 owner says how it should *feel*, translate it inside the hard rules and say which moves you made:
 - **"Bolder", "make it pop", "too safe":** bigger scale contrast between headline and body, a larger
   or tighter-cropped photo, fewer elements so one leads, one colour decision committed across a whole

@@ -2,8 +2,7 @@
 
 A site is built to a brief and a set of rules, then edited for months. Facts change in one place and
 not another, a quick fix adds a second accent colour, and rules the owner added to `feedback-log.md`
-after launch were never applied. Adapted from the drift report in Google's Elephant-Goldfish Model
-([google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model), Apache-2.0).
+after launch were never applied. Adapted from Google's Elephant-Goldfish Model (Apache-2.0).
 
 ## When
 
