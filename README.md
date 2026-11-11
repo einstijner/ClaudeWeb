@@ -4,13 +4,15 @@ Leeward's website build playbook as one Claude skill. Once installed, Claude fol
 builds or reviews a website: brief → direction sign-off → design DNA from reference sites → build →
 verify with screenshots → self-critique → learn from feedback.
 
-It combines Leeward's own rules and taste with the best parts of five open-source projects:
+It combines Leeward's own rules and taste with the best parts of six open-source projects:
 [superpowers](https://github.com/obra/superpowers) (the process), [design-dna](https://github.com/zanwei/design-dna)
 (extracting a site's look into a measured JSON spec, with colour-checking scripts) and
 [OpenDesign](https://github.com/nexu-io/open-design) (craft rules for type, colour, motion, states, forms and UX), [Hallmark](https://github.com/nutlope/hallmark)
 (page anatomy by business type, hero-first building, template tells) and Google's
 [Elephant-Goldfish Model](https://github.com/google/elephant-goldfish-model) (the builder keeps the
-context, fresh reviewers with none judge the page through five lenses; deciding on findings; drift checks).
+context, fresh reviewers with none judge the page through five lenses; deciding on findings; drift checks)
+and [Impeccable](https://github.com/pbakaus/impeccable) (the default looks AI lands on, browser-drawn
+details, capture checks, fix scoring, visitor walk-throughs, turning "make it bolder" into concrete moves).
 Leeward's hard rules override all of them. See `skills/leeward-web/NOTICE.md`.
 
 The skill itself is in [`skills/leeward-web/`](skills/leeward-web/SKILL.md).

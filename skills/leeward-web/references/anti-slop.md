@@ -76,6 +76,39 @@ From [nutlope/hallmark](https://github.com/nutlope/hallmark) (MIT), the patterns
 - **The stock close:** an email sign-up band as the last section on a business that doesn't send a
   newsletter.
 
+## Default looks (from Impeccable)
+
+From [pbakaus/impeccable](https://github.com/pbakaus/impeccable) (Apache-2.0). Left to choose freely,
+AI-built sites land on a handful of looks whatever the business is. Any of them is fine when the
+client's logo, DNA or the owner asks for it; landing there by default means nobody decided.
+
+- **Warm cream page, high-contrast serif headline, terracotta or signal-red accent.** Claude's own
+  habit: warm, family and "boutique" subjects come out cream, italic serif and lamplight even when
+  nothing asked for it. Treat that first palette as already spent. (Hanami in `feedback-log.md` is this
+  exact failure.)
+- **Near-black page, one neon accent, glowing edges.**
+- **Editorial hairlines, italic display serif, small tracked mono labels.**
+- **Flat bright colour, black boxes, hard offset shadows (`4px 4px 0`), heavy condensed type.**
+- **The Caribbean postcard:** turquoise, sand and coral, palm-leaf shapes, wave dividers, a script
+  "paradise". The place is the photos' job, not the palette's.
+
+**The check:** could someone guess this site's look from its category alone ("beach bar, so turquoise
+and sand")? If yes, rework it from the logo, the photos and the DNA until they couldn't.
+
+**Reflex fonts.** These are the faces models reach for when they stop looking: Fraunces, Playfair
+Display, Cormorant, Lora, Crimson, Newsreader, DM Serif, DM Sans, Outfit, Plus Jakarta Sans, Space
+Grotesk, Space Mono, IBM Plex, Syne, Instrument Sans, Inter as a display face. Using one needs a reason
+specific to this client (the logo's lettering, a DNA file); "it's a yacht, so a serif" is not a reason.
+*(Reel Charters uses Fraunces; open question for the owner whether that stays the house premium face.)*
+
+More tells, all must fix:
+- A shadow with no offset (a coloured glow or halo around a card or button). Shadows have an offset and a soft blur.
+- Hard offset "block" shadows outside a deliberately brutalist site.
+- Section numbers (01 / 02 / 03) when the order means nothing to the visitor.
+- A modal or pop-up for something that could sit on the page.
+- Monospace type as decoration rather than for times, coordinates or codes.
+- A circle or polygon cut-out pretending to follow the edge of something in a photo. Use a real cut-out image or none.
+
 ## Photo stand-ins (when the client has no photos yet)
 
 - Light stand-ins in a paper tone with a hairline border and a caption saying what photo goes there. Never

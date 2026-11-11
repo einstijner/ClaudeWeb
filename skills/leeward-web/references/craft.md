@@ -63,6 +63,14 @@ crop, not just at 1440px.
 (`#fafafa`, or warm like Tres's `#f6f3ee`) where it suits the feel. On dark surfaces, use hairline
 borders like `rgba(255,255,255,.08–.2)`.
 
+**Light or dark comes from where the site is used,** not from the category. Write one sentence of the
+scene first: a guest on a sunny deck checking times on a phone wants a light page with strong contrast
+that survives glare; a night-time beach club's events page may want dark. A dark page in bright
+sunlight is hard to read.
+
+**Shadows** have an offset and a soft blur, and are used once as a depth system. A zero-offset coloured
+glow is decoration, not depth.
+
 **Name tokens by purpose** (`--ink`, `--paper`, `--accent`, `--line`), not by hue (`--blue-500`).
 
 **Overscroll.** Set the `html` background to a brand tone so pulling past the top or bottom never
@@ -78,6 +86,13 @@ flashes the wrong colour.
 - Vary the density: alternate a tight section with a breathing one, so not every section is the same
   centred stack.
 - Full-bleed photography breaks the grid on purpose; the text stays on the grid.
+- More space above a heading than below it, so the heading belongs to what follows.
+
+**The parts the browser draws.** Theme them from the tokens; they ship with browser defaults otherwise,
+and models skip them most reliably (from Impeccable, Apache-2.0):
+`::selection` colours, `caret-color`, `accent-color` on checkboxes, radios and date pickers,
+`scrollbar-color` where a panel scrolls, `text-underline-offset` and thickness on links, and
+`font-variant-numeric: tabular-nums` wherever times, prices or durations line up in a column.
 
 ## Shape
 

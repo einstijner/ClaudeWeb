@@ -58,12 +58,14 @@ Blocker even if the reviewer didn't flag it: the page told a stranger something 
 and its notes from `taste.md`, `design-dna.json` if any, `anti-slop.md`, `craft.md`. Source only to
 quote copy or locate a problem.
 
-> First line, one word: `recapture` (a screenshot is missing or wrong; list what to recapture),
+> Before reading the feel or the DNA, look at the screenshots and write one line per screen of what
+> is actually there. Judge from that list, not from what the notes say should be there.
+> First line of your reply, one word: `recapture` (a screenshot is missing or wrong; list what to recapture),
 > `rebuild` (the first screen fails the feel wholesale), `fix` (findings follow) or `ship`.
 > Scroll the 1440 page one screen at a time: a screen with nothing big enough to be its reason to
 > exist (a heading adrift, a narrow column beside empty space, an empty box where a photo belongs)
 > outranks any detail. Name every headline that would work unchanged on a competitor's site. Check
-> every owner's hard rule and every tell in `anti-slop.md`. Does the page deliver the feel? Name the
+> every owner's hard rule and every tell in `anti-slop.md` (default looks and reflex fonts included). Does the page deliver the feel? Name the
 > biggest gap. Close with one line: what must not be lost while fixing.
 
 ## 3. Booking path (the product)
@@ -76,7 +78,17 @@ job), the Forms and States sections of `craft.md`.
 > at 390px and at 1440px, from the first screen to a sent enquiry. Report every screen on mobile from
 > which the action can't be reached, every step that asks for something it could have prefilled
 > (the trip, the date, the party size), and every state that is missing or unclear: empty, loading,
-> sending, success, failure, invalid input, long input. What happens when sending fails? There must
+> sending, success, failure, invalid input, long input. Walk it as four visitors in turn:
+> - **On the dock:** a cruise-ship day-tripper on their phone, one thumb, roaming data, interrupted
+>   halfway. Is the action in thumb reach? Does anything heavy load first? Is what they typed still
+>   there when they come back?
+> - **First time:** has never booked a charter or a table here. Takes every label literally. Any icon
+>   without words, any step where it's unclear what happens next, any success with no confirmation?
+> - **Keyboard and screen reader:** tabs through the whole path. Focus visible? Labels on every field?
+>   Are sending, success and errors announced, and shown by more than colour?
+> - **Stress tester:** a 60-character name, emoji in the message, the back button and a refresh
+>   mid-form, a double tap on Send. Does anything break, lose input, or send twice?
+> What happens when sending fails? There must
 > be a WhatsApp or email route carrying what the visitor typed. Check every link, `tel:`, `mailto:`
 > and WhatsApp URL in the source. Count the taps from landing to sent.
 

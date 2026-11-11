@@ -24,6 +24,10 @@ Check:
 - No more than about 160px of empty band between the hero content and the fold.
 - The photo crops well at every size (`object-position` set per breakpoint where needed).
 
+- **The memory test:** if a visitor left after this one screen, what would they describe an hour
+  later? "The boat at anchor off Tintamarre with the time and the Book button" passes; "a nice blue
+  website" is a mood, and the hero isn't done.
+
 On a new site, then run the First visit and Taste lenses (`reviewers.md`) on the hero screenshots
 alone. Get the hero right before building anything below it. It's the screen most visitors judge the
 business by.
@@ -36,7 +40,14 @@ When the page is built and your own checks pass (`process.md` → Verify).
 
 Save everything the reviewers will read in `review/` at the project root, with absolute paths:
 screenshots (named by page and width), command output (build, lint, audit), the Lighthouse report.
-Add `review/` to `.gitignore` unless the owner wants reviews kept. Each lens in `reviewers.md` lists
+Add `review/` to `.gitignore` unless the owner wants reviews kept. If you know the width the owner
+views on (their phone, their laptop), capture that too: it's the width they'll judge.
+
+**Check every capture before sending it** (from Impeccable, Apache-2.0). Let entrance animations
+finish or turn them off first: an element still faded out reads as missing and gets "fixed" into a
+bug. Take full-page shots from the top of the document. Then open every file once and confirm it
+shows what its name says: no blank or black areas, no half-loaded images, the right page at the right
+width. A review of a broken screenshot is not a review. Each lens in `reviewers.md` lists
 exactly what it gets; give it that and nothing more.
 
 **Never give a reviewer your intent.** No summary of the conversation, no "I did X on purpose", no
@@ -82,9 +93,19 @@ Rules for deciding:
 
 ### 4. Fix, then run again
 
-Fix everything marked FIX in one batch, re-screenshot, and check the fixes yourself. Then run the
-lenses that raised a Blocker or Major again, as **new** reviewers with no memory of the last round
-and no list of what you changed.
+Fix everything marked FIX in one batch, re-screenshot (same file names), and check the fixes yourself.
+Then run the lenses that raised a Blocker or Major again, as **new** reviewers with no memory of the
+last round and never your account of what you changed. Give each one, besides its usual inputs, the
+previous round's findings for its lens in the reviewer's own words, and this instruction first:
+
+> Before looking for anything new, score each finding below from the new screenshots alone:
+> `resolved`, `partial` or `unresolved`, one line each saying what you can see. A fix you can't see in
+> the screenshots is unresolved. Something moved but still not right (the spacing changed, the
+> headline is still generic) is partial at best. Then list at most three problems the fixes caused,
+> then your normal review.
+
+A partial or unresolved finding counts as open. A later "ship" covers what was scored and reviewed,
+nothing more: say exactly that in the report.
 
 Keep a list of **settled** findings (contested, or answered by the owner). If a new reviewer raises a
 settled one again (same place, same issue), don't reopen it. A **fixed** finding is different: if it
@@ -129,4 +150,6 @@ Each ASK THE OWNER finding, with the question.
 The Taste lens's last line.
 ```
 
-Never claim a review passed that didn't run, and never call a self-review fresh eyes.
+Never claim a review passed that didn't run, and never call a self-review fresh eyes. If the owner
+answers a "ship" with their own screenshot or a named problem, that outranks every capture you took:
+put it in a new full review, don't patch it and declare it fixed.

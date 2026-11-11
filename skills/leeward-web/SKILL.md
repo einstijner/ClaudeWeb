@@ -78,7 +78,10 @@ so it outlives the conversation; never hand your intent to a reviewer.
 6. **Verify with evidence.** Run the site, screenshot it at 390, 768 and 1440px, and look at the
    screenshots. Run `npm run build` and `npm run lint`, Lighthouse in mobile mode on the production
    build, and `npm audit`. With a DNA file, score the screenshots'
-   colours with `scripts/verify.mjs`. Claim nothing you haven't seen work in this session.
+   colours with `scripts/verify.mjs`. If the owner has installed Impeccable's detector, run
+   `npx impeccable detect --json` on the local URL and hand its findings to the Taste and Gates lenses
+   as evidence; where it disagrees with Leeward's rules, Leeward's rules win. Check every screenshot
+   shows what its name says before anyone reviews it. Claim nothing you haven't seen work in this session.
    (`process.md` → Verify.)
 7. **Fresh-eyes review, then fix.** Run the reviewer lenses for the job (`reviewers.md`) as parallel
    subagents that didn't build the page and aren't told why it is the way it is. Decide on every
@@ -106,5 +109,5 @@ node "$SKILL_ROOT/scripts/verify.mjs" /abs/path/build-screenshot.png /abs/path/d
 ## Credits
 
 Built on ideas and material from obra/superpowers, zanwei/design-dna, nexu-io/open-design,
-nutlope/hallmark and google/elephant-goldfish-model,
+nutlope/hallmark, google/elephant-goldfish-model and pbakaus/impeccable,
 adapted to Leeward's rules. See `NOTICE.md` and `licenses/`.

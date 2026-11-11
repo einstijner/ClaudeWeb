@@ -25,6 +25,8 @@ design. Good questions for a client site:
 - What makes this business different from the one next door?
 - What real material exists? (Photos, logo, menu, prices, reviews they actually have.)
 - Which feel? Offer your recommendation: "I'd go premium, like Tres; agree?"
+- On a change to an existing site: what must stay exactly as it is? And for any site: what would make
+  a polished result still feel wrong for this place?
 
 If the owner says "just build it", stop asking and make sensible calls, listing your assumptions.
 
@@ -53,6 +55,11 @@ build:
 
 If there are two genuinely different good directions, show both in a line each and recommend one.
 Wait for a yes. Small changes to an existing site don't need this step.
+
+**A change keeps; a redesign replaces.** A change keeps the existing look, copy, behaviour and
+everything outside what was asked; ask before replacing factual copy. A redesign keeps the facts,
+content and booking path but treats the old look as evidence of what the business is, not as
+something to polish. Never split the difference: polish on a look the owner wants gone is wasted.
 
 **Stress-test it first (new sites, Claude Code).** Before sending the direction, give one fresh
 subagent only `brief.md` and the direction text (no conversation) and ask it, with the shared rules
@@ -96,6 +103,19 @@ When the owner critiques something:
 - **Generalise it.** Ask yourself: would this correction apply to other sites too? If yes, write it to
   `feedback-log.md` as a rule.
 - Apply one point at a time and check each one.
+
+**Vague words, concrete moves** (adapted from Impeccable's steering commands, Apache-2.0). When the
+owner says how it should *feel*, translate it inside the hard rules and say which moves you made:
+- **"Bolder", "make it pop", "too safe":** bigger scale contrast between headline and body, a larger
+  or tighter-cropped photo, fewer elements so one leads, one colour decision committed across a whole
+  section. Never more colours, more fonts, gradients or effects.
+- **"Calmer", "too busy", "too much":** remove before restyling. Fewer accent uses, fewer words per
+  screen, slower or no motion, more space between groups.
+- **"Cleaner", "simpler":** run the Zoom out lens (`reviewers.md`) and delete what doesn't serve the
+  visitor's one job.
+- **"More premium":** more space, larger photography, fewer words, quieter type weights. Not gold,
+  not script, not dark by default.
+If the word still doesn't map to a move, ask about the one point before changing anything.
 
 ## When something breaks
 

@@ -32,4 +32,14 @@ This skill is Leeward's own work, and it includes or adapts material from these 
   the convergence rule shortened to one clean round with a three-round cap, and a labelled
   self-review fallback added for claude.ai. No EGM files are copied.
 
+- **Impeccable** by Paul Bakaus and contributors, https://github.com/pbakaus/impeccable, Apache
+  License 2.0. The "Default looks" section of `references/anti-slop.md`, the light/dark, shadow,
+  heading-spacing and browser-drawn-parts notes in `references/craft.md`, the memory test, capture
+  checks and fix-scoring pass in `references/review.md`, the look-first instruction and the four
+  visitors in `references/reviewers.md`, and the change-vs-redesign rule and "vague words, concrete
+  moves" in `references/process.md` adapt its craft floor, new-work, finish-reviewer, critique
+  personas and steering commands. Changes: rewritten and shortened for Leeward's hard rules,
+  hospitality clients and Next.js stack; personas recast as Caribbean visitors; its direction
+  roll, comp pipeline, live mode and detector are not included. No Impeccable files are copied.
+
 The full licence texts are in `licenses/`.
